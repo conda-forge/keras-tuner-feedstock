@@ -1,5 +1,5 @@
 {% set name = "keras-tuner" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f018ded5127e7c588bd78faa753fa1f4108f1f28c0e5694a06bfb1f08204215b
+  sha256: a9626842bc032bb0c8f3152bbc90910f50db3221f8aa980ec82ac729692707ec
 
 build:
   noarch: python
@@ -47,7 +47,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Hypertuner for Keras"
+  summary: Hypertuner for Keras
   doc_url: https://keras-team.github.io/keras-tuner/
   dev_url: https://github.com/keras-team/keras-tuner
 
