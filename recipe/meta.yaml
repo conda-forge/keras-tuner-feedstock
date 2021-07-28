@@ -30,6 +30,7 @@ requirements:
     - terminaltables
     - tqdm
     - tensorflow >=2.0
+    - Ipython
 
 test:
   imports:
