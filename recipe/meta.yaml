@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 929a7ff1b8eb73166f95dd1dea1e5d45018e4bd33800c4a890116bff4b28ccf1
+  sha256: f018ded5127e7c588bd78faa753fa1f4108f1f28c0e5694a06bfb1f08204215b
 
 build:
   noarch: python
@@ -30,10 +30,6 @@ requirements:
     - terminaltables
     - tqdm
     - tensorflow >=2.0
-    - packaging
-    - tensorboard
-    - ipython
-    - kt-legacy
 
 test:
   imports:
