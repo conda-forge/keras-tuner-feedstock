@@ -33,11 +33,12 @@ requirements:
     - Ipython
     - packaging
     - tensorboard
-    - kerastuner
+   
 
 test:
   imports:
     - keras_tuner
+    - kerastuner
     - kerastuner.abstractions
     - kerastuner.applications
     - kerastuner.distribute
