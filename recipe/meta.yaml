@@ -33,7 +33,7 @@ requirements:
 
 test:
   imports:
-    - keras-tuner
+    - keras_tuner
     - kerastuner.abstractions
     - kerastuner.applications
     - kerastuner.distribute
