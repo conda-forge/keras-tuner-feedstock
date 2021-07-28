@@ -1,4 +1,4 @@
-{% set name = "kerastuner" %}
+{% set name = "keras-tuner" %}
 {% set version = "1.0.3" %}
 
 package:
