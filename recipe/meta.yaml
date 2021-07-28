@@ -30,6 +30,10 @@ requirements:
     - terminaltables
     - tqdm
     - tensorflow >=2.0
+    - packaging
+    - tensorboard
+    - ipython
+    - kt-legacy
 
 test:
   imports:
