@@ -38,13 +38,13 @@ requirements:
 test:
   imports:
     - keras_tuner
-    - kerastuner.abstractions
-    - kerastuner.applications
-    - kerastuner.distribute
-    - kerastuner.engine
-    - kerastuner.oracles
-    - kerastuner.protos
-    - kerastuner.tuners
+    - keras_tuner.abstractions
+    - keras_tuner.applications
+    - keras_tuner.distribute
+    - keras_tuner.engine
+    - keras_tuner.oracles
+    - keras_tuner.protos
+    - keras_tuner.tuners
 
 about:
   home: https://github.com/keras-team/keras-tuner
