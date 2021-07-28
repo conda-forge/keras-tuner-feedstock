@@ -33,6 +33,7 @@ requirements:
     - Ipython
     - packaging
     - tensorboard
+    - kerastuner
 
 test:
   imports:
