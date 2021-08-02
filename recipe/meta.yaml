@@ -1,5 +1,5 @@
 {% set name = "keras-tuner" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f018ded5127e7c588bd78faa753fa1f4108f1f28c0e5694a06bfb1f08204215b
+  sha256: 929a7ff1b8eb73166f95dd1dea1e5d45018e4bd33800c4a890116bff4b28ccf1
 
 build:
   noarch: python
@@ -30,17 +30,20 @@ requirements:
     - terminaltables
     - tqdm
     - tensorflow >=2.0
+    - Ipython
+    - packaging
+    - tensorboard
+   
 
 test:
   imports:
-    - kerastuner
-    - kerastuner.abstractions
-    - kerastuner.applications
-    - kerastuner.distribute
-    - kerastuner.engine
-    - kerastuner.oracles
-    - kerastuner.protos
-    - kerastuner.tuners
+    - keras_tuner
+    - keras_tuner.applications
+    - keras_tuner.distribute
+    - keras_tuner.engine
+    - keras_tuner.oracles
+    - keras_tuner.protos
+    - keras_tuner.tuners
 
 about:
   home: https://github.com/keras-team/keras-tuner
@@ -56,3 +59,4 @@ extra:
     - oblute
     - rluria14
     - Tata17
+    - mxr-conda
