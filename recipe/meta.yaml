@@ -20,15 +20,15 @@ requirements:
     - python >=3.7
   run:
     - python >=3.7
+    - Ipython
+    - kt-legacy
     - numpy
+    - packaging
     - requests
     - scikit-learn
     - scipy
-    - tensorflow >=2.0
-    - Ipython
-    - packaging
     - tensorboard
-    - kt-legacy
+    - tensorflow >=2.0
 
 
 test:
