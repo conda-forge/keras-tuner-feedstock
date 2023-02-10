@@ -11,28 +11,24 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - colorama
-    - future
+    - python >=3.7
     - numpy
-    - python >=3.6
     - requests
     - scikit-learn
     - scipy
-    - tabulate
-    - terminaltables
-    - tqdm
     - tensorflow >=2.0
     - Ipython
     - packaging
     - tensorboard
+    - kt-legacy
 
 
 test:
@@ -44,6 +40,10 @@ test:
     - keras_tuner.oracles
     - keras_tuner.protos
     - keras_tuner.tuners
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/keras-team/keras-tuner
