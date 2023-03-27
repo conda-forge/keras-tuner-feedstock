@@ -1,11 +1,11 @@
-About keras-tuner
-=================
+About keras-tuner-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/keras-tuner-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/keras-team/keras-tuner
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/keras-tuner-feedstock/blob/main/LICENSE.txt)
 
 Summary: Hypertuner for Keras
 
