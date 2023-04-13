@@ -1,5 +1,5 @@
 {% set name = "keras-tuner" %}
-{% set version = "1.3.4" %}
+{% set version = "1.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8443ff67dc769b630cbc295ad997df5d5e357fed2559b1d991c42378b4c390ac
+  sha256: 5f65fbf932e17883290b40cf4b95987129947cf607972594b453e3c26e5314b7
 
 build:
   noarch: python
