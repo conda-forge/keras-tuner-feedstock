@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -29,7 +29,7 @@ requirements:
     - scipy
     - tensorboard
     - tensorflow >=2.0
-    - protobuf <=3.20.3
+    - protobuf
 
 
 test:
