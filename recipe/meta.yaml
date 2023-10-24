@@ -39,7 +39,6 @@ test:
     - keras_tuner.applications
     - keras_tuner.engine
     - keras_tuner.oracles
-    - keras_tuner.protos
     - keras_tuner.tuners
   commands:
     - pip check
