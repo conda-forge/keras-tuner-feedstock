@@ -2,7 +2,7 @@
 {% set version = "1.4.7" %}
 
 package:
-  name: {{ name|lower }}
+  name: keras-tuner-split
   version: {{ version }}
 
 source:
@@ -11,38 +11,46 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
 
-requirements:
-  host:
-    - pip
-    - python >=3.8
-  run:
-    - python >=3.8
-    - Ipython
-    - kt-legacy
-    - numpy
-    - packaging
-    - requests
-    - scikit-learn
-    - scipy
-    - tensorboard
-    - keras-core
-    - protobuf
+outputs:
+  - name: {{ name }}
+    build:
+      script: {{ PYTHON }} -m pip install . -vv
+    requirements:
+      host:
+        - pip
+        - python >=3.8
+      run:
+        - python >=3.8
+        - keras
+        - packaging
+        - requests    
+        - kt-legacy
+    test:
+      imports:
+        - keras_tuner
+        - keras_tuner.applications
+        - keras_tuner.engine
+        - keras_tuner.oracles
+        - keras_tuner.tuners
+      commands:
+        - pip check
+      requires:
+        - pip
 
-
-test:
-  imports:
-    - keras_tuner
-    - keras_tuner.applications
-    - keras_tuner.engine
-    - keras_tuner.oracles
-    - keras_tuner.tuners
-  commands:
-    - pip check
-  requires:
-    - pip
+  - name: {{ name }}-bayesian
+    requirements:
+      host:
+        - python >=3.8
+      run:
+        - python >=3.8
+        - {{ pin_subpackage('keras-tuner', exact=True) }}
+        - scikit-learn
+        - scipy
+    test:
+      imports:
+        - keras_tuner.tuners.bayesian
 
 about:
   home: https://github.com/keras-team/keras-tuner
@@ -60,3 +68,5 @@ extra:
     - rluria14
     - Tata17
     - mxr-conda
+    - DManowitz
+  feedstock-name: keras-tuner
