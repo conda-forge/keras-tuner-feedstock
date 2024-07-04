@@ -17,11 +17,44 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table>
+    
+  <tr>
+    <td>Azure</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9250&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/keras-tuner-feedstock?branchName=main">
-      </a>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9250&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/keras-tuner-feedstock?branchName=main">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9250&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/keras-tuner-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9250&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/keras-tuner-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9250&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/keras-tuner-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </td>
   </tr>
 </table>
@@ -32,6 +65,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-keras--tuner-green.svg)](https://anaconda.org/conda-forge/keras-tuner) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/keras-tuner.svg)](https://anaconda.org/conda-forge/keras-tuner) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/keras-tuner.svg)](https://anaconda.org/conda-forge/keras-tuner) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/keras-tuner.svg)](https://anaconda.org/conda-forge/keras-tuner) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-keras--tuner--bayesian-green.svg)](https://anaconda.org/conda-forge/keras-tuner-bayesian) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/keras-tuner-bayesian.svg)](https://anaconda.org/conda-forge/keras-tuner-bayesian) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/keras-tuner-bayesian.svg)](https://anaconda.org/conda-forge/keras-tuner-bayesian) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/keras-tuner-bayesian.svg)](https://anaconda.org/conda-forge/keras-tuner-bayesian) |
 
 Installing keras-tuner
 ======================
@@ -43,16 +77,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `keras-tuner` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `keras-tuner, keras-tuner-bayesian` can be installed with `conda`:
 
 ```
-conda install keras-tuner
+conda install keras-tuner keras-tuner-bayesian
 ```
 
 or with `mamba`:
 
 ```
-mamba install keras-tuner
+mamba install keras-tuner keras-tuner-bayesian
 ```
 
 It is possible to list all of the versions of `keras-tuner` available on your platform with `conda`:
@@ -147,6 +181,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@DManowitz](https://github.com/DManowitz/)
 * [@Tata17](https://github.com/Tata17/)
 * [@anselmoo](https://github.com/anselmoo/)
 * [@mxr-conda](https://github.com/mxr-conda/)
